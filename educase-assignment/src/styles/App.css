@@ -1,0 +1,43 @@
+.app {
+  width: 100%;
+  max-width: 414px;
+  height: 680px;
+  /* Reduced from 896px */
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.screen-container {
+  flex: 1;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  height: calc(100% - 70px);
+  /* Reduced navigation height */
+  overflow-y: auto;
+}
+
+.screen-container.slide-left {
+  transform: translateX(-100%);
+}
+
+.screen-container.slide-right {
+  transform: translateX(100%);
+}
+
+@media (max-width: 480px) {
+  .app {
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  #root {
+    padding: 0;
+  }
+}

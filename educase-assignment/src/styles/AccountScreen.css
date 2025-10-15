@@ -1,0 +1,75 @@
+.account-screen {
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+
+.account-header {
+    margin-bottom: 30px;
+}
+
+.account-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-avatar {
+    position: relative;
+}
+
+.avatar-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #F0F0F0;
+}
+
+.online-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    background: #8B5FBF;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2C2C;
+    margin-bottom: 4px;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #8E8E8E;
+}
+
+.account-description {
+    flex: 1;
+}
+
+.account-description p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+}
